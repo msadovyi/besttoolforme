@@ -9,55 +9,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <style>
     body {
-      display: flex;
-      flex-direction: column;
       margin: 0;
       padding: 0;
       height: 100vh;
     }
+    .wrapper {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr;
+    }
     .nav {
-      background: linear-gradient(rgb(241, 242, 249), #ffffff);;
-      padding: 100px;
+      display: flex;
+      background: linear-gradient(rgb(241, 242, 249), #ffffff);
+      padding: 50px 50px 0px 50px;
       text-align: center;
       font-family: "Montserrat", monospace;
     }
     .info {
-      font-size: 20pt;
+      align-self: center;
       max-width: 768px;
       margin-left: auto;
       margin-right: auto;
     }
     .landbot-wrapper {
-      flex: auto
+      height: 100%;
+      width: 100%;
     }
     .color-pink {
       color: rgb(224, 38, 120);
     }
+    .text-large {
+      font-size: 18pt;
+      font-weight: 700;
+    }
+    .text-medium {
+      font-size: 16pt;
+      font-weight: 200;
+    }
     @media only screen and (max-width : 768px) {
       .nav {
-        padding: 70px 40px 40px 40px;
+        padding: 20px 40px 40px 40px;
       }
-      .info {
+      .text-large {
         font-size: 14pt;
+        font-weight: 700;
+      }
+      .text-medium {
+        font-size: 12pt;
+        font-weight: 200;
       }
     }
 
   </style>
 </head>
 <body>
-  <div class="nav">
-    <h2 class="info">
-      <span style="font-weight: 700; font-size: 21pt;">
-        Vous souhaitez lancer ou améliorer votre présence en ligne, quelque soit votre secteur d'activité?
-      </span>
-      <br/>
-      <span style="font-weight: 200;">
-        Pour vous aider à choisir parmi les 5.000+ outils digitaux, nous avons crée un chatbot entrainé sur des <span class="color-pink">millions de cas</span>.
-      </span>
-    </h2>
-  </div>
-  <div class='landbot-wrapper'>
-    <div id="landbot">
+  <div class="wrapper">
+    <div class="nav">
+      <h2 class="info">
+        <span class="text-large">
+          Vous souhaitez lancer ou améliorer votre présence en ligne, quelque soit votre secteur d'activité?
+        </span>
+        <br/>
+        <span class="text-medium">
+          Pour vous aider à choisir parmi les 5.000+ outils digitaux, nous avons crée un chatbot entrainé sur des <span class="color-pink">millions de cas</span>.
+        </span>
+      </h2>
+    </div>
+    <div class='landbot-wrapper'>
+      <div id="landbot">
+      </div>
     </div>
   </div>
   <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
