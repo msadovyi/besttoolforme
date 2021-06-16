@@ -7,6 +7,13 @@
   <title>Best Tool For Me</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <meta property="og:title"              content="Best Tool For Me" />
+  <meta property="og:description"        content="Vous souhaitez lancer ou améliorer votre présence en ligne, quelque soit votre secteur d'activité?. Pour vous aider à choisir parmi les 5.000+ outils digitaux, nous avons crée un chatbot entrainé sur des millions de cas" />
+  <meta property="og:url"                content="https://besttoolforme.com" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:locale"             content="fr_FR" />
+  <meta property="og:image"              content="https://besttoolforme.com/robot.jpeg" />
   <style>
     body {
       margin: 0;
@@ -49,14 +56,14 @@
     }
     @media only screen and (max-width : 768px) {
       .nav {
-        padding: 20px 40px 40px 40px;
+        padding: 20px 30px 30px 30px;
       }
       .text-large {
-        font-size: 14pt;
+        font-size: 12pt;
         font-weight: 700;
       }
       .text-medium {
-        font-size: 12pt;
+        font-size: 10pt;
         font-weight: 200;
       }
     }
@@ -83,7 +90,7 @@
   </div>
   <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
   <script>
-    const myLandbot = new Landbot.Container({
+    const myLandbot = new Landbot.ContainerPopup({
       container: '#landbot',
       configUrl: 'https://chats.landbot.io/v3/H-900398-1YMQZQEPB33RC3QQ/index.json',
     });
